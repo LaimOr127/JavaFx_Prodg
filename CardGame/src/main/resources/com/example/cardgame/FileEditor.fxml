@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="FileEditorController">
+  <center>
+    <TextArea fx:id="textArea"/>
+  </center>
+  <bottom>
+    <HBox spacing="10">
+      <Button text="Выбрать файл" onAction="#chooseFile"/>
+      <Button text="Создать файл" onAction="#createFile"/>
+      <Button text="Удалить файл" onAction="#deleteFile"/>
+      <Button text="Записать в файл" onAction="#writeFile"/>
+      <Button text="Прочитать из файла" onAction="#readFile"/>
+      <Button text="Редактировать файл" onAction="#editFile"/>
+      <Button text="Добавить в конец файла" onAction="#appendToFile"/>
+    </HBox>
+  </bottom>
+</BorderPane>
